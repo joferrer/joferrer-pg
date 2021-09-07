@@ -1,0 +1,182 @@
+:root{
+    --azul-oscuro:#4670F0;
+    --azul-claro:##48A4FA;
+    --azul-verdoso:##4DC2E3;
+    --azul-aqua:#48FAF1;
+    --verde:#46F0B7;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Gabriela', serif;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+.section__bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-left: 14px;
+    margin-right: 14px;
+    
+}
+
+.logo--principal{
+    max-width: 92px;
+    max-height: 96px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+   
+}
+.btn--normal{
+    border-radius: 2px;
+    border-style: hidden;
+    background-color: var(--verde);
+    width: 122px;
+    height: 41px;
+    font-family: 'Gabriela',serif;
+}
+.btn--text{
+    font-size: 1.6rem;
+    color: #ffff;
+    
+}
+.nav{
+    display: flex;
+    position: relative;
+    justify-content:center;
+    background-color: var(--azul-oscuro);
+    width: 50px;
+    height: 52px;
+}
+.nav>button{
+    background-color: var(--azul-oscuro);
+    border-style: hidden;
+    width: 40px;
+    height: 52px;
+}
+.nav--icon{
+    width: 40px;
+    height: 52px;
+    filter: invert(100%);
+    
+}
+.contacto{
+    margin-top: 16px;
+}
+
+.sobre-mi--presentacion{
+    
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 14px;
+    
+}
+
+.sobre-mi--presentacion>h1{
+    color: var(--verde);
+    text-align: center;    
+    font-size: 1.6rem;
+    margin: 16px; /* margin bot and top*/
+}
+.sobre-mi--presentacion>p{
+    color: #ffff;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.sobre-mi--presentacion>img{
+    max-width: 85px;
+    max-height: 87px;
+    border-radius: 50%;
+}
+.sobre-mi--redes{
+    width: 290px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.sobre-mi--redes>a{
+    width: 34px;
+    max-height: 33px;
+}
+.redes-icon{
+    max-width: 34px;
+    max-height: 33px;
+}
+.formulario-contacto{
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14px;
+}
+.formulario-contacto>h1{
+    text-align: center;
+    color: var(--verde);
+    align-self: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.formulario--contacto--form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-right: 14px;
+    padding-bottom: 14px;
+}
+.formulario--contacto--form>input{
+    align-self: flex-end;
+    border-radius: 2px;
+    border-style: hidden;
+    background-color: var(--verde);
+    width: 122px;
+    height: 41px;
+    color: white;
+    font-family: 'Gabriela',serif;
+}
+.formulario--contacto--form>label{
+    width: 100%;
+}
+.formulario--contacto--form>label>input,.formulario--contacto--form>label>textarea{
+    width: 100%;
+    font-family: 'Gabriela', serif;
+    margin-bottom: 14px;
+}
+.formulario--contacto--form>label>textarea{
+    height: 100px;
+}
+
+/*CSS para cambiar el color de los iconos
+https://codepen.io/sosuke/pen/Pjoqqp
+*/
+.twiter-icon{
+    filter: invert(54%) sepia(47%) saturate(1004%) hue-rotate(180deg) brightness(100%) contrast(96%);   
+}
+.facebook-icon{
+    filter:invert(41%) sepia(29%) saturate(5504%) hue-rotate(213deg) brightness(96%) contrast(96%);
+}
+.github-icon{
+    filter: invert(83%) sepia(36%) saturate(733%) hue-rotate(95deg) brightness(97%) contrast(95%);
+}
+.gitlab-icon{
+    filter: invert(96%) sepia(98%) saturate(1450%) hue-rotate(140deg) brightness(100%) contrast(96%);
+}
+.youtube-icon{
+    filter: invert(18%) sepia(37%) saturate(7261%) hue-rotate(352deg) brightness(94%) contrast(78%);
+}
