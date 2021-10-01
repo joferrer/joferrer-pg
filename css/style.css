@@ -4,6 +4,8 @@
     --azul-verdoso:##4DC2E3;
     --azul-aqua:#48FAF1;
     --verde:#46F0B7;
+    --tono-claro: #1F1F1F;
+    --tono-oscuro:#1A1A1A;
 }
 
 
@@ -15,11 +17,16 @@
 html{
     font-size: 62.5%;
     font-family: 'Gabriela', serif;
+    background-color:var(--tono-claro);
+    color: white;
 }
 header{
     display: flex;
     justify-content: flex-end;
+    
+
 }
+
 .section__bloque{
     display: flex;
     flex-direction: column;
@@ -40,7 +47,8 @@ header{
 .btn--normal{
     border-radius: 2px;
     border-style: hidden;
-    background-color: var(--verde);
+    border:1.5px solid var(--verde);
+    background-color: var(--tono-oscuro);
     width: 122px;
     height: 41px;
     font-family: 'Gabriela',serif;
@@ -54,12 +62,14 @@ header{
     display: flex;
     position: relative;
     justify-content:center;
-    background-color: var(--azul-oscuro);
-    width: 50px;
-    height: 52px;
+    background-color: var(--tono-oscuro);
+    visibility: hidden;
+    width: 0;
+  
 }
-.nav>button{
-    background-color: var(--azul-oscuro);
+
+header>button{
+    background-color: var(--tono-oscuro);
     border-style: hidden;
     width: 40px;
     height: 52px;
@@ -76,7 +86,7 @@ header{
 
 .sobre-mi--presentacion{
     
-    background-color: var(--azul-oscuro);
+    border: 1px solid var(--azul-oscuro);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,10 +129,10 @@ header{
     max-height: 33px;
 }
 .formulario-contacto{
-    background-color: var(--azul-oscuro);
+    border: 1px solid var(--azul-oscuro);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 14px;
 }
 .formulario-contacto>h1{
@@ -144,7 +154,8 @@ header{
     align-self: flex-end;
     border-radius: 2px;
     border-style: hidden;
-    background-color: var(--verde);
+    border:1.5px solid var(--verde);
+    background-color: var(--tono-oscuro);
     width: 122px;
     height: 41px;
     color: white;
@@ -157,11 +168,18 @@ header{
     width: 100%;
     font-family: 'Gabriela', serif;
     margin-bottom: 14px;
-}
-.formulario--contacto--form>label>textarea{
-    height: 100px;
+    background-color: var(--tono-oscuro);
+    border: none;
 }
 
+.formulario--contacto--form>label>textarea{
+    height: 100px;
+   
+}
+.section__mapa{
+    max-width: 100%;
+    background-color: var(--tono-claro);
+}
 /*CSS para cambiar el color de los iconos
 https://codepen.io/sosuke/pen/Pjoqqp
 */

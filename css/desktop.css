@@ -4,6 +4,8 @@
     --azul-verdoso:##4DC2E3;
     --azul-aqua:#48FAF1;
     --verde:#46F0B7;
+    --tono-claro: #1F1F1F;
+    --tono-oscuro:#1A1A1A;
 }
 body{
     display: flex;
@@ -15,6 +17,7 @@ header{
     justify-content: flex-start;
     max-width: 20vw;
     max-height: 100vh;
+    background-color: var(--tono-oscuro);
 }
 main{
     max-width: 80vw;
@@ -26,6 +29,29 @@ main{
     width: 15vw;
     height: 100vh;
     position:fixed;
+    visibility: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+    
+}
+nav>li{
+    list-style: none;
+  
+    border-top: 1px solid var(--azul-aqua);
+    border-bottom: 1px solid var(--azul-aqua);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 .section__bloque{
     display: flex;
@@ -37,19 +63,21 @@ main{
     justify-content: center;
     align-items: flex-start;
     position: relative;
+    border: none;
     
    
 }
 .logo--principal{
     
     order: 3;
-    max-width: 600px;
-    max-height: 630px;
+    max-width: 500px;
+    max-height: 530px;
     position: absolute;    
     margin: 0;
     align-self: flex-end;
     min-width: 400px;
     min-height: 400px;
+    width: 40vw;
 }
 .bloque--bienvenida>button{
     order: 2;
@@ -63,19 +91,22 @@ main{
 }
 
 .sobre-mi--presentacion{
-    background-color: white;
+    background-color: var(--tono-claro);
     width: 100%;
     height: 40vh;
+    color: white;
+    padding: 20px 20px;
+    justify-content: center;
+    border: none;
 }
 .sobre-mi--presentacion>h1{
-    color: black;
     font-size: 5rem;
     text-align: left;
     align-self: flex-start;
     margin: 0;
 }
 .sobre-mi--presentacion>p{
-    color: black;
+    
     font-size: 3rem;
     text-align: left;
     max-width: 50vw;
@@ -105,3 +136,49 @@ main{
     max-width: 60px;
     max-height: 60px;
 }
+.formulario-contacto{
+ 
+    max-width: 90vw;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.formulario-contacto>h1{
+    font-size: 4.5rem;
+    text-align: left;
+    align-self: flex-start;
+    width: 40vw;
+}
+.formulario--contacto--form{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+.formulario--contacto--form>label{
+   margin-bottom: 14px;
+   max-height: 100px;
+   
+}
+.formulario--contacto--form>label>input{
+    height: 45px;
+    background-color: var(--tono-oscuro);
+    border: none;
+}
+.formulario--contacto--form>label>textarea{
+    background-color: var(--tono-oscuro);
+    border: none;
+}
+.section__mapa{
+    width: 35vw;
+    height: 60vh;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 100px;
+   
+    
+}
+
