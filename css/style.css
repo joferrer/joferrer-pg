@@ -52,11 +52,13 @@ header{
     width: 122px;
     height: 41px;
     font-family: 'Gabriela',serif;
-}
-.btn--text{
     font-size: 1.6rem;
-    color: #ffff;
-    
+    color: var(--verde);
+}
+
+.btn--normal:hover{
+    background-color: var(--verde);
+    color: var(--tono-oscuro);
 }
 .nav{
     display: flex;
@@ -66,6 +68,21 @@ header{
     visibility: hidden;
     width: 0;
   
+}
+.nav-a{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-top:1px solid var(--azul-aqua) ;
+    border-bottom: 1px solid var(--azul-aqua);
+    padding-top: 10px;
+    text-decoration: none;
+    color: var(--azul-aqua);
+}
+.nav-a:hover{
+    background-color: var(--azul-aqua);
+    color: var(--tono-oscuro);
+    
 }
 
 header>button{
@@ -124,6 +141,7 @@ header>button{
     width: 34px;
     max-height: 33px;
 }
+
 .redes-icon{
     max-width: 34px;
     max-height: 33px;
@@ -158,8 +176,12 @@ header>button{
     background-color: var(--tono-oscuro);
     width: 122px;
     height: 41px;
-    color: white;
+    color: var(--verde);
     font-family: 'Gabriela',serif;
+}
+.formulario--contacto--form>input:hover{
+    background-color: var(--verde);
+    color: var(--tono-oscuro);
 }
 .formulario--contacto--form>label{
     width: 100%;
@@ -180,6 +202,36 @@ header>button{
     max-width: 100%;
     background-color: var(--tono-claro);
 }
+
+/*menu responsivo*/
+.nav-open{
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    flex-direction: column;
+    order: 2;
+    
+}
+
+.header-open{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--tono-oscuro);
+    flex-direction: column;
+    position: fixed;
+    
+}
+.btn-open{
+    align-self: flex-end;
+    order: 1;
+}
+
+.redes-open{
+    margin-top: 250px;
+    position: fixed;
+}
+
+
 /*CSS para cambiar el color de los iconos
 https://codepen.io/sosuke/pen/Pjoqqp
 */
@@ -198,3 +250,4 @@ https://codepen.io/sosuke/pen/Pjoqqp
 .youtube-icon{
     filter: invert(18%) sepia(37%) saturate(7261%) hue-rotate(352deg) brightness(94%) contrast(78%);
 }
+

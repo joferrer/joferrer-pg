@@ -36,22 +36,13 @@ main{
     font-size: 1.6rem;
     
 }
-nav>li{
-    list-style: none;
-  
-    border-top: 1px solid var(--azul-aqua);
-    border-bottom: 1px solid var(--azul-aqua);
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    padding-top: 10px;
-
-    
-}
-
 a{
     text-decoration: none;
     color: white;
+}
+
+#nav-btn{
+    visibility: hidden;
 }
 .section__bloque{
     display: flex;
@@ -168,17 +159,12 @@ a{
     background-color: var(--tono-oscuro);
     border: none;
 }
-.formulario--contacto--form>label>textarea{
-    background-color: var(--tono-oscuro);
-    border: none;
-}
+
 .section__mapa{
     width: 35vw;
     height: 60vh;
     align-self: center;
     justify-self: center;
-    margin-bottom: 100px;
-   
-    
+    margin-bottom: 100px;  
 }
 
