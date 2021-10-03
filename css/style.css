@@ -235,6 +235,7 @@ header>button{
     margin-bottom: 14px;
     background-color: var(--tono-oscuro);
     border: none;
+    color: white;
 }
 
 .formulario--contacto--form>label>textarea{
