@@ -49,17 +49,45 @@ header{
     border-style: hidden;
     border:1.5px solid var(--verde);
     background-color: var(--tono-oscuro);
-    width: 122px;
-    height: 41px;
+    width: 160px;
+    height: 50px;
     font-family: 'Gabriela',serif;
     font-size: 1.6rem;
     color: var(--verde);
+    position: relative;
+}
+.btn--normal::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    position: absolute;
+    background-color: var(--verde);    
+    transition: .2s ease-out all;
+    
 }
 
 .btn--normal:hover{
-    background-color: var(--verde);
+    
+    color: var(--tono-oscuro);
+    
+
+}
+.btn--normal:hover::before{
+    width: 100%;
     color: var(--tono-oscuro);
 }
+.btn--text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+}
+
 .nav{
     display: flex;
     position: relative;
@@ -78,13 +106,27 @@ header{
     padding-top: 10px;
     text-decoration: none;
     color: var(--azul-aqua);
+    position: relative;
+}
+.nav-a::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--azul-aqua);
+    transition: .2s ease-out all;
 }
 .nav-a:hover{
-    background-color: var(--azul-aqua);
-    color: var(--tono-oscuro);
     
+    color: var(--tono-oscuro);
+    transition: all .3s ease-out ;   
 }
-
+.nav-a:hover::before{
+    width: 100%;
+}
 header>button{
     background-color: var(--tono-oscuro);
     border-style: hidden;
@@ -182,6 +224,7 @@ header>button{
 .formulario--contacto--form>input:hover{
     background-color: var(--verde);
     color: var(--tono-oscuro);
+
 }
 .formulario--contacto--form>label{
     width: 100%;
@@ -227,8 +270,12 @@ header>button{
 }
 
 .redes-open{
-    margin-top: 250px;
+    margin-top: 80vw;
     position: fixed;
+}
+
+.ocultar{
+    visibility: hidden;
 }
 
 
