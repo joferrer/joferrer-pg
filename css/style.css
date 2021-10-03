@@ -26,7 +26,22 @@ header{
     
 
 }
+h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+}
 
+@keyframes slidein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+
+    }
+  }
 .section__bloque{
     display: flex;
     flex-direction: column;
@@ -188,6 +203,10 @@ header>button{
     max-width: 34px;
     max-height: 33px;
 }
+.redes-icon:hover{
+    transform: scale(1.3);
+    transition: transform .5s;
+}
 .formulario-contacto{
     border: 1px solid var(--azul-oscuro);
     display: flex;
@@ -222,8 +241,9 @@ header>button{
     font-family: 'Gabriela',serif;
 }
 .formulario--contacto--form>input:hover{
-    background-color: var(--verde);
+    background: var(--verde);
     color: var(--tono-oscuro);
+    transition: all .3s;
 
 }
 .formulario--contacto--form>label{
