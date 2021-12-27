@@ -110,7 +110,23 @@ a{
     transform: translateY(40px);
 
 }
-
+.sobre-mi{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sobre-mi--tecnologias{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+}
+.sobre-mi--tecnologias>article>picture>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
 .sobre-mi--presentacion{
     background-color: var(--tono-claro);
     width: 50%;
