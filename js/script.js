@@ -17,3 +17,4 @@ function navMostrarOcultar(){
     redes[0].classList.toggle("redes-open");
     btnContactame[0].classList.toggle('ocultar');
 }
+

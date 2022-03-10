@@ -1,3 +1,28 @@
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readline() {
+    return inputString[currentLine++];
+}
+ //******************************************* */
+
 let grafo;
 
 grafo = [['i',0,1,2,3],[0],[1],[2],[3]];
@@ -27,3 +52,12 @@ const fib = (n, memo={})=>{
     return memo[n];
 }
 console.log(fib(50));
+
+
+/**
+ * Constest A, Natives
+ */
+const nav = (n,m)=>{
+    n = readLine();
+    m = readLine().split(',').map;
+}
