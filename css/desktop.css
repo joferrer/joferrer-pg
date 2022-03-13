@@ -43,6 +43,7 @@ main{
     height: 100px;
     z-index: 2;
     margin-left: 0.5vw;
+    translate: 0;
 }
 a{
     text-decoration: none;

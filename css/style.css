@@ -161,7 +161,15 @@ header>button{
     height: 52px;
     z-index: 1;
 }
-
+#logoHeader{
+    width: 100px;
+    height: 100px;
+    transform: translateX(-36vw);
+}
+.logo--principal{
+    width: 150px;
+    height: 150px;
+}
 .nav--icon{
     width: 40px;
     height: 52px;
@@ -336,6 +344,13 @@ header>button{
 .redes-open{
    transform: translateY(50vh);
     position: fixed;
+}
+.logo--principal-open{
+    transform: translateX(50vw);
+    align-content: flex-start;
+    justify-content: center;
+   
+    z-index: 2;
 }
 
 .ocultar{

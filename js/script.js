@@ -16,5 +16,6 @@ function navMostrarOcultar(){
     nav_icon.classList.toggle('btn-open');
     redes[0].classList.toggle("redes-open");
     btnContactame[0].classList.toggle('ocultar');
+    document.getElementById('logoHeader').classList.toggle('logo--principal-open');
 }
 
